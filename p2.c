@@ -11,7 +11,7 @@ COMP 322
 int main(int argc, char *argv[])
 {
     int i,j;
-	printf("--Start of Lab 2 program--\n");
+    printf("--Start of Lab 2 program--\n");
     pid_t pid = fork();
 
             if (pid < 0)
@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
             }
             if (pid == 0)
             {
+                sleep(1);
                 for (i = 1; i < argc; i++)
                 {
                     pid_t pid = fork();
@@ -40,3 +41,4 @@ int main(int argc, char *argv[])
                 system("ps -H");
             }
 }
+
