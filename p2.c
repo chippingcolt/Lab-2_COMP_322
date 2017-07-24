@@ -1,3 +1,8 @@
+/*
+Timothy Brumbaugh
+COMP 322
+07/23/17
+*/
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
